@@ -6,20 +6,33 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
-  public menuItems = [
+  public items = [
     {
-      label: 'File',
+      label: 'Pipes de Angular',
+      icon: 'pi pi-desktop',
       items: [
-        {label: 'New', icon: 'pi pi-fw pi-plus'},
-        {label: 'Open', icon: 'pi pi-fw pi-folder'},
-        {label: 'Quit', icon: 'pi pi-fw pi-times'}
+        {
+          label: 'Textos y Fechas',
+          icon: 'pi pi-align-left',
+        },
+        {
+          label: 'Números',
+          icon: 'pi pi-dollar',
+        },
+        {
+          label: 'No comunes',
+          icon: 'pi pi-globe',
+        }
       ]
     },
     {
-      label: 'Edit',
+      label: 'Pipes Personalizados',
+      icon: 'pi pi-cog',
       items: [
-        {label: 'Undo', icon: 'pi pi-fw pi-undo'},
-        {label: 'Redo', icon: 'pi pi-fw pi-redo'}
+        {
+          label: 'Otro elemento',
+          icon: 'pi pi-cog',
+        }
       ]
     }
   ];
